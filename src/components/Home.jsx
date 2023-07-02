@@ -22,9 +22,14 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="hidden md:block md:w-1/2">
-                    <img src={profile} alt="profile picture" className="rounded-full border border-white mx-auto w-2/3 h-[350px]" />
+                <div className="md:block md:w-1/2">
+                    <img
+                        src={profile}
+                        alt="profile picture"
+                        className="rounded-full border border-white mx-auto md:w-2/3 w-full max-h-[350px]"
+                    />
                 </div>
+
             </div>
         </div>
     );

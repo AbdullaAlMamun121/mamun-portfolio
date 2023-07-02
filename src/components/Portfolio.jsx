@@ -65,21 +65,21 @@ const Portfolio = () => {
       src: [img1, img2, img3],
       demo: 'https://chef-recipe-assignment.web.app/',
       code: 'https://github.com/AbdullaAlMamun121/chef-recipe-client',
-      summary: 'Details of the projects'
+      summary: 'Discover a chef and recipe app with mouthwatering dishes. Explore talented chefs, delightful menu items, and detailed recipes. Add favorites, contact us, and order now for an incredible culinary experience!'
     },
     {
       id: 2,
       src: [img4, img5, img6, img7, img8],
       demo: 'https://languagelearning-5d814.web.app/',
       code: 'https://github.com/AbdullaAlMamun121/foreign-language-learning-client',
-      summary: 'Details of the projects description'
+      summary: 'Explore a comprehensive education platform with user registration and authentication. Manage instructors, enroll students, and select classes seamlessly. Benefit from responsive design and integrated APIs for smooth user experience. Enjoy hassle-free payment processing and role-based access control for efficient administration.'
     },
     {
       id: 3,
       src: [img9, img10, img11, img12, img13, img14],
       demo: 'https://toy-assignment-11.web.app/',
       code: 'https://github.com/AbdullaAlMamun121/toyWorld-client',
-      summary: 'Details of the projects'
+      summary: 'Discover a delightful baby toy project where you can find the perfect toys for your little ones. Create your own custom items and explore detailed information about each toy. Enjoy a gallery section on the homepage, along with convenient sub-category filtering. Plus, after logging in, you can easily update or delete your created toys for a personalized experience.'
     },
   ];
 
@@ -112,27 +112,29 @@ const Portfolio = () => {
 
           <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
             {portfolios.map(({ id, src, demo, code, summary }, index) => (
-              <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                <ImageCarousel images={src} />
-                <div className='flex justify-center items-center'>
-                  <button
-                    className='w-1/2 px-2 py-3 mt-4 duration-200 hover:scale-105'
-                    onClick={() => handleDemoClick(demo)}
-                  >
-                    Live site
-                  </button>
-                  <button
-                    className='w-1/2 px-2 py-3 mt-4 duration-200 hover:scale-105'
-                    onClick={() => handleCodeClick(code)}
-                  >
-                    Code
-                  </button>
-                  <button
-                    className='w-1/2 px-2 py-3 mt-4 duration-200 hover:scale-105'
-                    onClick={() => handleSummaryClick(index)}
-                  >
-                    Summary
-                  </button>
+              <div key={id} className='project-item'> {/* Wrap each project in a container div */}
+                <div className='shadow-md shadow-gray-600 rounded-lg'>
+                  <ImageCarousel images={src} />
+                  <div className='flex justify-center items-center'>
+                    <button
+                      className='w-1/2 px-2 py-3 mt-4 duration-200 hover:scale-105'
+                      onClick={() => handleDemoClick(demo)}
+                    >
+                      Live site
+                    </button>
+                    <button
+                      className='w-1/2 px-2 py-3 mt-4 duration-200 hover:scale-105'
+                      onClick={() => handleCodeClick(code)}
+                    >
+                      Code
+                    </button>
+                    <button
+                      className='w-1/2 px-2 py-3 mt-4 duration-200 hover:scale-105'
+                      onClick={() => handleSummaryClick(index)}
+                    >
+                      Summary
+                    </button>
+                  </div>
                 </div>
                 {activeProjectSummary[index] && (
                   <div className='bg-white text-black p-4 mt-4'>
