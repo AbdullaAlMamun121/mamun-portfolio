@@ -25,6 +25,8 @@ import img23 from "../assets/portfolio/cafe1.png"
 import img24 from "../assets/portfolio/cafe2.png"
 import img25 from "../assets/portfolio/ai1.png"
 import img26 from "../assets/portfolio/ai2.png"
+import img27 from "../assets/portfolio/quiz1.png"
+import img28 from "../assets/portfolio/quiz2.png"
 
 const ImageCarousel = ({ images }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -134,7 +136,7 @@ const Portfolio = () => {
     },
     {
       id: 8,
-      src: [img25, img26],
+      src: [img27, img28],
       demo: "https://magnificent-starburst-b6fcac.netlify.app/",
       code: "https://github.com/AbdullaAlMamun121/quiz-hero",
       summary:
