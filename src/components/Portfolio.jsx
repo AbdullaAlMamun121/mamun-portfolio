@@ -23,6 +23,8 @@ import img21 from "../assets/portfolio/job2.png"
 import img22 from "../assets/portfolio/job3.png"
 import img23 from "../assets/portfolio/cafe1.png"
 import img24 from "../assets/portfolio/cafe2.png"
+import img25 from "../assets/portfolio/ai1.png"
+import img26 from "../assets/portfolio/ai2.png"
 
 const ImageCarousel = ({ images }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -121,6 +123,22 @@ const Portfolio = () => {
       code: "https://github.com/AbdullaAlMamun121/knowledge-cafe",
       summary:
         "Introducing Coffee House, where convenience meets customization! Our project boasts user-friendly cards, each adorned with two buttons - a 'Red Mark' and a 'Bookmark' icon. These buttons unlock a left-side bar, empowering you to tailor actions according to your preferences. Whether it's marking important items or saving favorites, Coffee House puts you in control of your experience! Savor the freedom to organize and streamline with ease. Welcome to a new level of efficiency at Coffee House!",
+    },
+    {
+      id: 7,
+      src: [img25, img26],
+      demo: "https://dulcet-pony-30263c.netlify.app/",
+      code: "https://github.com/AbdullaAlMamun121/ai-universe",
+      summary:
+        "Step into the AI Universe Hub! Unleash the power of organization with our project's cards, featuring dates, features, and more. Simplify your search with the 'Short by Date' button, effortlessly arranging the content. And don't miss the 'View All' button to access a comprehensive overview. With external API calls, we ensure real-time updates for an enriching experience. Embrace the future of AI exploration at AI Universe Hub!",
+    },
+    {
+      id: 8,
+      src: [img25, img26],
+      demo: "https://magnificent-starburst-b6fcac.netlify.app/",
+      code: "https://github.com/AbdullaAlMamun121/quiz-hero",
+      summary:
+        "Welcome to Quiz Hero, the ultimate quiz application! Challenge yourself with a series of thought-provoking questions under the ticking clock. Complete the test, and witness our advanced analysis unveil your score. Discover your knowledge prowess with Quiz Hero - embark on the journey to become a true quiz champion!",
     },
   ];
 
