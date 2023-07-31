@@ -18,6 +18,11 @@ import img16 from "../assets/portfolio/gym2.png";
 import img17 from "../assets/portfolio/gym3.png";
 import img18 from "../assets/portfolio/gym4.png";
 import img19 from "../assets/portfolio/gym5.png";
+import img20 from "../assets/portfolio/job1.png"
+import img21 from "../assets/portfolio/job2.png"
+import img22 from "../assets/portfolio/job3.png"
+import img23 from "../assets/portfolio/cafe1.png"
+import img24 from "../assets/portfolio/cafe2.png"
 
 const ImageCarousel = ({ images }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -99,7 +104,23 @@ const Portfolio = () => {
       demo: "https://gym-instruction-abdullaalmamun121.vercel.app/",
       code: "https://github.com/AbdullaAlMamun121/gym-instructor",
       summary:
-        "Welcome to our gym instructor project! Discover our happy client section, where our satisfied members share their success stories. Explore the benefits section to learn about our specialized programs and expert trainers. Don't miss our diverse classes section, catering to all fitness levels. Reach out to us through the contact us section and start your fitness journey today! TypeScript, ReactJS, and Tailwind CSS power this dynamic and user-friendly experience. Get ready to transform your life with our fitness expertise!",
+        "Welcome to our gym instructor project! Discover our happy client section, where our satisfied members share their success stories. Explore the benefits section to learn about our specialized programs and expert trainers. Don't miss our diverse classes section, catering to all fitness levels. Reach out to us through the contact us section and start your fitness journey today! TypeScript, ReactJS, and Tailwind CSS power this dynamic and user-friendly experience.",
+    },
+    {
+      id: 5,
+      src: [img20, img21, img22],
+      demo: "https://stellar-kulfi-9c0b0b.netlify.app/",
+      code: "https://github.com/AbdullaAlMamun121/career-hub",
+      summary:
+        "Welcome to CareerMap! Discover your path with our user-friendly menu: Home, Statistics, Applied Job, Blog. Explore Featured Jobs & Job Categories, applying seamlessly using 'Onsite' or 'Remote' buttons. After applying, view job details & shortlist for future prospects. Unleash your potential with CareerMap!",
+    },
+    {
+      id: 6,
+      src: [img23, img24],
+      demo: "https://jade-belekoy-add884.netlify.app/",
+      code: "https://github.com/AbdullaAlMamun121/knowledge-cafe",
+      summary:
+        "Introducing Coffee House, where convenience meets customization! Our project boasts user-friendly cards, each adorned with two buttons - a 'Red Mark' and a 'Bookmark' icon. These buttons unlock a left-side bar, empowering you to tailor actions according to your preferences. Whether it's marking important items or saving favorites, Coffee House puts you in control of your experience! Savor the freedom to organize and streamline with ease. Welcome to a new level of efficiency at Coffee House!",
     },
   ];
 
